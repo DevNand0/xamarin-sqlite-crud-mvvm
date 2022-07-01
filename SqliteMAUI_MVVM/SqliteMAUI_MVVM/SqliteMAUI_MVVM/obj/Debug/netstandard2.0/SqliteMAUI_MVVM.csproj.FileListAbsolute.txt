@@ -1,0 +1,16 @@
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\bin\Debug\netstandard2.0\SqliteMAUI_MVVM.deps.json
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\bin\Debug\netstandard2.0\SqliteMAUI_MVVM.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\bin\Debug\netstandard2.0\ref\SqliteMAUI_MVVM.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\bin\Debug\netstandard2.0\SqliteMAUI_MVVM.pdb
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\Views\CoffeeEquipmentPage.xaml.g.cs
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.AssemblyInfoInputs.cache
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.AssemblyInfo.cs
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.csproj.CoreCompileInputs.cache
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\ref\SqliteMAUI_MVVM.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.pdb

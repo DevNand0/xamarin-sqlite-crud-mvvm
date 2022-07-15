@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="SqliteMAUI_MVVM.Views.CoffeeEquipmentCVPage"
+             xmlns:viewmodels="clr-namespace:SqliteMAUI_MVVM.ViewModels"
+             xmlns:model="clr-namespace:SqliteMAUI_MVVM.Models"
+             x:Name="CoffeePage"
+             BackgroundColor="{AppThemeBinding 
+                Dark={StaticResource WindowBackgroundColorDark}, 
+                Light={StaticResource WindowBackgroundColor}}">
+    <ContentPage.BindingContext>
+        <viewmodels:CoffeeEquipmentViewModel/>
+    </ContentPage.BindingContext>
+    <RefreshView
+        Command="{Binding RefreshCommand}"
+        RefreshColor="Red"
+        IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+
+        <CollectionView 
+            BackgroundColor="Transparent" 
+            IsGrouped="True"
+            ItemSizingStrategy="MeasureAllItems"
+            ItemsSource="{Binding CoffeeGroups}"
+            SelectedItem="{Binding SelectedCoffee, Mode=TwoWay}"
+            RemainingItemsThreshold="1"
+            RemainingItemsThresholdReachedCommand="{Binding DelayLoadMoreCommand}"
+            SelectionMode="Single">
+            <!-- PROPIEDADES DE CollectionView
+        -->
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.EmptyView>
+                <StackLayout Padding="12">
+                    <Label HorizontalOptions="Center" Text="No Hay Cafe"/>
+                </StackLayout>
+            </CollectionView.EmptyView>
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="{x:Null}">
+                    <StackLayout Padding="12">
+                        <Label Style="{StaticResource LabelMedium}" Text="{Binding Key}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate >
+                    <SwipeView android:SwipeView.SwipeTransitionMode="Drag">
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Favorito"
+                                    BackgroundColor="Orange"         
+                                    CommandParameter="{Binding .}" 
+                                    Command="{Binding Source={x:Reference CoffeePage},
+                                                    Path=BindingContext.FavoriteCommand}"/>
+                                <SwipeItem Text="Eliminar" 
+                                    BackgroundColor="Red" 
+                                    IsDestructive="True"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                    
+                    <Grid Padding="10">
+                            <Frame CornerRadius="20" HasShadow="True">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}"
+                                   WidthRequest="66"/>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label VerticalOptions="Center"
+                                        FontSize="Large"
+                                        Text="{Binding Name}"/>
+                                        <Label VerticalOptions="Center"
+                                        FontSize="Large"
+                                        Text="{Binding Roaster}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <!-- SECCION PARA COLOCAR CABECERA Y PIE DE LISTADO, DEBE SER A FUERA DE </ListView.ItemTemplate> -->
+            <CollectionView.Header>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Listado de Cafe" FontSize="22"/>
+                </StackLayout>
+            </CollectionView.Header>
+            <CollectionView.Footer>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Cargar Mas" Command="{Binding LoadMoreCommand}" />
+                    <Button Text="Borrar" Command="{Binding ClearCommand}" />
+                </StackLayout>
+            </CollectionView.Footer>
+        </CollectionView>
+
+
+    </RefreshView>
+    
+</ContentPage>

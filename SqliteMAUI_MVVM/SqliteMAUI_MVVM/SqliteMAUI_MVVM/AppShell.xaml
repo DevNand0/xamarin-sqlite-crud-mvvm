@@ -134,9 +134,9 @@
                                     Light={StaticResource SystemGray5Dark}}"
                              Glyph="{x:Static fontAwesome:FontAwesomeIcons.MugHot}"/>
         </FlyoutItem.Icon>
-        <!--
+        
         <ShellContent ContentTemplate="{DataTemplate local:CoffeeEquipmentCVPage}" Route="CoffeeEquipmentCVPage" />
-        -->
+        
     </FlyoutItem>
 
 

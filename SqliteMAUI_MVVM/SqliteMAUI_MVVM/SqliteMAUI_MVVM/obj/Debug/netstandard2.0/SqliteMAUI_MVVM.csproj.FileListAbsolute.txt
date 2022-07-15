@@ -14,3 +14,5 @@ C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\ref\SqliteMAUI_MVVM.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.pdb
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\SqliteMAUI_MVVM.csproj.AssemblyReference.cache
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM\obj\Debug\netstandard2.0\Views\CoffeeEquipmentCVPage.xaml.g.cs

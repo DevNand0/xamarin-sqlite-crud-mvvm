@@ -1,12 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:SqliteMAUI_MVVM.ViewModels"
+             xmlns:model="clr-namespace:SqliteMAUI_MVVM.Models"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Name="CoffeePage"
+             x:DataType="viewmodels:CoffeeEquipmentViewModel"
              x:Class="SqliteMAUI_MVVM.Views.CoffeeEquipmentPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.BindingContext>
+        <viewmodels:CoffeeEquipmentViewModel/>
+    </ContentPage.BindingContext>
+    <!-- CUANDO SE VAYA A CREAR UN COMANDO DESDE UN EVENTO SE DEBE COLOCAR LA SECCION QUE CONTIENE EL <ContentPage.Resources>  
+        EL PARAMETRO CLAVE PARA ESTE EJEMPLO DE ESTA SECCION ES x:Key="ItemSelectedEventArgsConverter"
+    -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:ItemSelectedEventArgsConverter x:Key="ItemSelectedEventArgsConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ListView BackgroundColor="Transparent" 
+            ItemsSource="{Binding CoffeeGroups}"
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
+            GroupDisplayBinding="{Binding Key}"
+            IsPullToRefreshEnabled="True"
+            IsGroupingEnabled="True"
+            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            RefreshCommand="{Binding RefreshCommand}"
+            RefreshControlColor="Red"
+            CachingStrategy="RecycleElement"
+            SelectedItem="{Binding SelectedCoffee, Mode=TwoWay}"
+            >
+        <!-- PROPIEDADES DE LIST VIEW PARA REFRESCAR Y HACERLO POR GRUPOS EL LIST VIEW TIENE UNA PROPIEDAD DE REFRESCADO LLAMADO IsRefreshing
+              GroupDisplayBinding="{Binding Key}"
+              IsPullToRefreshEnabled="True"
+              IsGroupingEnabled="True"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RefreshCommand="{Binding RefreshCommand}"
+              RefreshControlColor="Red"
+        -->
+        <!-- ESTA SECCION DE <ListView.Behaviors> CONTIENE LOS EVENTOS DE SELECCION CONVERTIDO EN COMANDOS  -->
+        <ListView.Behaviors>
+            <xct:EventToCommandBehavior
+                EventName="ItemSelected"
+                Command="{Binding SelectedCommand}"
+                EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"
+                />
+        </ListView.Behaviors>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Coffee">
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="Favorito"  
+                                  CommandParameter="{Binding .}" 
+                                  Command="{Binding Source={x:Reference CoffeePage},
+                                                    Path=BindingContext.FavoriteCommand}"/>
+                        <MenuItem Text="Eliminar"/>
+                    </ViewCell.ContextActions>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20" HasShadow="True">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}"
+                                   WidthRequest="66"/>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label VerticalOptions="Center"
+                                        FontSize="Large"
+                                        Text="{Binding Name}"/>
+                                    <Label VerticalOptions="Center"
+                                        FontSize="Large"
+                                        Text="{Binding Roaster}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <!-- SECCION PARA COLOCAR CABECERA Y PIE DE LISTADO, DEBE SER A FUERA DE </ListView.ItemTemplate> -->
+            <ListView.Header>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Listado de Cafe" FontSize="22"/>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Cargar Mas" />
+            </StackLayout>
+        </ListView.Footer>
+    </ListView>
+
 </ContentPage>

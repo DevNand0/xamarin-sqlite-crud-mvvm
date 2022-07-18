@@ -1,5 +1,7 @@
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\SqliteMAUI_MVVM.iOS.exe
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\SqliteMAUI_MVVM.iOS.pdb
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\MvvmHelpers.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\MvvmHelpers.pdb
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\SQLite-net.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\SQLitePCLRaw.nativelibrary.dll
@@ -8,6 +10,7 @@ C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\System.Buffers.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\System.Memory.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\pavel\OneDrive\Documentos\SOURCE_CODE\Xamarin\xamarin-sqlite-crud-mvvm\SqliteMAUI_MVVM\SqliteMAUI_MVVM\SqliteMAUI_MVVM.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll

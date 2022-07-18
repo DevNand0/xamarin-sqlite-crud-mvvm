@@ -1,6 +1,7 @@
 ﻿using MvvmHelpers;
 using MvvmHelpers.Commands;
 using SqliteMAUI_MVVM.Models;
+using SqliteMAUI_MVVM.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,6 +26,13 @@ namespace SqliteMAUI_MVVM.ViewModels
         {
             get => selectedCoffee;
             set => SetProperty(ref selectedCoffee, value);
+        }
+
+        bool isBusy;
+        public bool IsBusy
+        {
+            get => isBusy;
+            set => SetProperty(ref isBusy, value);
         }
 
 
@@ -55,15 +63,6 @@ namespace SqliteMAUI_MVVM.ViewModels
             RefreshCommand.ExecuteAsync();
         }
 
-        bool isBusy;
-        public bool IsBusy 
-        {
-            get => isBusy;
-            set => SetProperty(ref isBusy, value);
-        }
-
-        
-        
         public ICommand CallServerCommand { get; }
 
 
@@ -75,6 +74,12 @@ namespace SqliteMAUI_MVVM.ViewModels
             Coffee.Clear();
             LoadMore();
             IsBusy = false;
+        }
+
+        async Task Remove(Coffee coffee)
+        {
+
+            await Refresh();
         }
 
 
@@ -110,7 +115,6 @@ namespace SqliteMAUI_MVVM.ViewModels
             if (Coffee.Count >= 20)
                 return;
             var image = "coffeebag.png";
-            //var image = "https://www.yesplz.coffee/app/uploads/2020/11/emptybag-min.png";
             Coffee.Add(new Models.Coffee { Roaster = "Yes Plz", Name = "Sip Sunshine", Image = image });
             Coffee.Add(new Models.Coffee { Roaster = "Yes Plz", Name = "Potent Potable", Image = image });
             Coffee.Add(new Models.Coffee { Roaster = "Blue Bottle", Name = "Kenya Kiambu", Image = image });

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SqliteMAUI_MVVM.Views.MyCoffee;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,12 @@ namespace SqliteMAUI_MVVM
         public AppShell()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute(nameof(AddMyCoffeePage),
+                typeof(AddMyCoffeePage));
+
+            Routing.RegisterRoute(nameof(MyCoffeeDetailPage),
+                typeof(MyCoffeeDetailPage));
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SqliteMAUI_MVVM.Service
 {
-    public static class CoffeeService
+    public class CoffeeService : ICoffeeService
     {
         static SQLiteAsyncConnection db;
         static async Task Init() 
@@ -20,29 +20,29 @@ namespace SqliteMAUI_MVVM.Service
             await db.CreateTableAsync<Coffee>();
         }
 
-        public static async Task add(Coffee coffee)
+        public async Task add(Coffee coffee)
         {
             await Init();
             var id = await db.InsertAsync(coffee);
 
         }
 
-        public static async Task remove(int id) 
+        public async Task remove(long id) 
         {
             await Init();
             await db.DeleteAsync<Coffee>(id);
         }
 
-        public static async Task<IEnumerable<Coffee>> all() 
+        public async Task<IEnumerable<Coffee>> all() 
         {
             await Init();
             return await db.Table<Coffee>().ToListAsync();
         }
 
-        public static async Task get() 
+        public async Task<Coffee> get(long id) 
         {
             await Init();
-            
+            return await db.Table<Coffee>().Where(x=>x.Id==id).FirstOrDefaultAsync();
         }
     }
 }

@@ -148,9 +148,9 @@
                                     Light={StaticResource SystemGray5Dark}}"
                              Glyph="{x:Static fontAwesome:FontAwesomeIcons.List}"/>
         </FlyoutItem.Icon>
-        <!--
-        <ShellContent ContentTemplate="{DataTemplate local:MyStoredCoffeePage}" Route="MyStoredCoffeePage" />
-        -->
+        
+        <ShellContent ContentTemplate="{DataTemplate local:MyCoffee.MyStoredCoffeePage}" Route="MyStoredCoffeePage" />
+        
     </FlyoutItem>
 
 
